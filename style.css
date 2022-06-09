@@ -92,7 +92,7 @@ body {
 }
 
 /*========== NAV SECTION EMAIL ==========*/
-.inputEmailContainer {
+#inputEmailContainer {
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -108,7 +108,7 @@ body {
   transition: border 200ms;
 }
 
-.inputEmailContainer input {
+#inputEmailContainer input {
   width: 10.4rem;
   background: none;
   border: none;
@@ -117,11 +117,11 @@ body {
   color: var(--text-base);
 }
 
-.inputEmailContainer:hover {
+#inputEmailContainer.activeJs {
   border: 1px solid var(--primary-color);
 }
 
-.inputEmailContainer:hover svg path {
+#inputEmailContainer.activeJs path {
   stroke: var(--primary-color);
 }
 
@@ -163,22 +163,19 @@ body {
   color: var(--text-base);
 }
 
-.inputPasswordContainer:hover {
-  border: 1px solid var(--primary-color);
-}
-
-.inputPasswordContainer:hover .lockSvg path {
-  stroke: var(--primary-color);
-}
-
-.inputPasswordContainer .eyeSvg{
+.inputPasswordContainer .eyeSvg {
   cursor: pointer;
 }
 
-#viewPasswordButton.viewPasswordActive .eyeSvg path{
+#viewPasswordButton.viewPasswordActive .eyeSvg path {
   stroke: var(--primary-color);
 }
 
+#passwordInput.activeJs,
+#passwordInput.activeJs :nth-child(1) svg path {
+  border: 1px solid var(--primary-color);
+  stroke: var(--primary-color);
+}
 /*========== NAV SECTION BOTTOM ==========*/
 .bottomNavSectionContainer {
   height: 2.1rem;
@@ -360,19 +357,19 @@ body {
     font-family: 'Poppins';
     color: var(--text-base);
     font-weight: 500;
-    font-size: .83vw;
+    font-size: 0.83vw;
     line-height: 2.22vh;
   }
 
   /*========== NAV SECTION EMAIL ==========*/
-  .inputEmailContainer {
+  #inputEmailContainer {
     display: flex;
     align-items: center;
     gap: 0.26vw;
 
     height: 4.07vh;
-    padding-block: .62vw;
-    padding-left: .62vw;
+    padding-block: 0.62vw;
+    padding-left: 0.62vw;
     margin-bottom: 1.85vh;
 
     border: 1px solid #868686;
@@ -381,21 +378,13 @@ body {
     transition: border 200ms;
   }
 
-  .inputEmailContainer input {
+  #inputEmailContainer input {
     width: 5.41vw;
     background: none;
     border: none;
     outline: none;
 
     color: var(--text-base);
-  }
-
-  .inputEmailContainer:hover {
-    border: 1px solid var(--primary-color);
-  }
-
-  .inputEmailContainer:hover svg path {
-    stroke: var(--primary-color);
   }
 
   /*========== NAV SECTION PASSWORD ==========*/
@@ -406,7 +395,7 @@ body {
 
     height: 4.07vh;
     padding-block: 1.11vh;
-    padding-inline: .62vw;
+    padding-inline: 0.62vw;
     margin-bottom: 3.14vh;
 
     border: 1px solid #868686;
@@ -436,19 +425,13 @@ body {
     color: var(--text-base);
   }
 
-  .inputPasswordContainer:hover {
-    border: 1px solid var(--primary-color);
-  }
-
-  .inputPasswordContainer:hover .lockSvg path {
+  #viewPasswordButton.viewPasswordActive .eyeSvg path {
     stroke: var(--primary-color);
   }
 
-  .inputPasswordContainer .eyeSvg:hover path {
-    cursor: pointer;
-  }
-
-  #viewPasswordButton.viewPasswordActive .eyeSvg path{
+  #passwordInput.activeJs,
+  #passwordInput.activeJs :nth-child(1) svg path {
+    border: 1px solid var(--primary-color);
     stroke: var(--primary-color);
   }
 
@@ -471,7 +454,7 @@ body {
   .bottomCheckRememberContainer p {
     font-family: 'Roboto';
     font-weight: 400;
-    font-size: .83vw;
+    font-size: 0.83vw;
     color: var(--text-base);
   }
 
@@ -482,7 +465,7 @@ body {
   .bottomNavSectionContainer a p {
     font-family: 'Poppins';
     font-weight: 600;
-    font-size: .72vw;
+    font-size: 0.72vw;
     color: var(--primary-color);
   }
 
@@ -494,7 +477,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: .72vw;
+    gap: 0.72vw;
   }
 
   .footerNavContainer button {
@@ -507,7 +490,7 @@ body {
 
     font-family: 'Poppins';
     font-weight: 600;
-    font-size: .93vw;
+    font-size: 0.93vw;
 
     letter-spacing: 0.015em;
     text-transform: uppercase;
@@ -523,7 +506,7 @@ body {
   .footerNavContainer p {
     font-family: 'Poppins';
     font-weight: 400;
-    font-size: .72vw;
+    font-size: 0.72vw;
 
     color: var(--primary-color);
   }
@@ -532,7 +515,7 @@ body {
     font-family: 'Poppins';
     text-decoration: none;
     font-weight: 600;
-    font-size: .72vw;
+    font-size: 0.72vw;
     color: var(--primary-color);
   }
 

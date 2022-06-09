@@ -42,7 +42,7 @@
           <section>
             <div class="sectionNavContainer">
               <h2>E-mail</h2>
-              <div class="inputEmailContainer">
+              <div id="inputEmailContainer">
                 <svg
                   width="20"
                   height="20"
@@ -66,11 +66,16 @@
                   />
                 </svg>
 
-                <input type="text" placeholder="Digite seu e-mail" />
+                <input
+                  onclick="textInputActive()"
+                  id="emailInput"
+                  type="text"
+                  placeholder="Digite seu e-mail"
+                />
               </div>
 
               <h2>Senha</h2>
-              <div class="inputPasswordContainer">
+              <div id="passwordInput" class="inputPasswordContainer">
                 <div class="passwordLockContainer">
                   <svg
                     class="lockSvg"
@@ -96,7 +101,12 @@
                     />
                   </svg>
 
-                  <input id="passwordInput" type="password" placeholder="Digite sua senha" />
+                  <input
+                    id="passwordInputFunction"
+                    onclick="passwordInputActive()"
+                    type="password"
+                    placeholder="Digite sua senha"
+                  />
                 </div>
                 <div id="viewPasswordButton" onclick="viewPassword()">
                   <svg
