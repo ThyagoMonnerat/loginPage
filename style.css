@@ -109,7 +109,7 @@ body {
 }
 
 #inputEmailContainer input {
-  width: 10.4rem;
+  width: 20.3rem;
   background: none;
   border: none;
   outline: none;
@@ -143,7 +143,7 @@ body {
 }
 
 .passwordLockContainer {
-  width: fit-content;
+  width: 100%;
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -155,7 +155,7 @@ body {
 }
 
 .passwordLockContainer input {
-  width: 10.4rem;
+  width: 20.3rem;
   background: none;
   border: none;
   outline: none;
@@ -379,7 +379,7 @@ body {
   }
 
   #inputEmailContainer input {
-    width: 5.41vw;
+    width: 100%;
     background: none;
     border: none;
     outline: none;
@@ -417,7 +417,7 @@ body {
   }
 
   .passwordLockContainer input {
-    width: 5.41vw;
+    width: 12.5vw;
     background: none;
     border: none;
     outline: none;
