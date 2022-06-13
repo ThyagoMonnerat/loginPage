@@ -69,8 +69,12 @@
                 <input
                   onclick="textInputActive()"
                   id="emailInput"
-                  type="text"
+                  type="email"
                   placeholder="Digite seu e-mail"
+                  form="userInfo"
+                  required
+                  title="Use um email válido."
+                  autocomplete="off"
                 />
               </div>
 
@@ -102,10 +106,16 @@
                   </svg>
 
                   <input
+                    form="userInfo"
+                    required
+                    maxlength="10"
+                    minlength="4"
+                    title="Coloque uma senha com o mínimo de 4, e máximo de 10 caracteres."
                     id="passwordInputFunction"
                     onclick="passwordInputActive()"
                     type="password"
-                    placeholder="Digite sua senha"
+                    placeholder="Digite sua senha de 4-10 caracteres"
+                    autocomplete="off"
                   />
                 </div>
                 <div id="viewPasswordButton" onclick="viewPassword()">
@@ -159,13 +169,13 @@
 
         <footer>
           <div class="footerNavContainer">
-            <button>Entrar</button>
+            <button form="userInfo" type="submit">Entrar</button>
             <p>Não tem uma conta?<a href=""> Registre-se</a></p>
           </div>
         </footer>
       </div>
     </div>
-
+    <form action="" method="" id="userInfo"></form>
     <script src="./script.js"></script>
   </body>
 </html>
